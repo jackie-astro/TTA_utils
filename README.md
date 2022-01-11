@@ -1,9 +1,9 @@
 # TTA_utils
-** TTA implementation **
-fork lib from git : https://github.com/qubvel/ttach
-tta_model = tta.ClassificationTTAWrapper(model, tta.aliases.five_crop_transform(),  merge_mode='mean')
-"""
-parameter: 
+## TTA implementation 
+* fork lib from git : https://github.com/qubvel/ttach
+  tta_model = tta.ClassificationTTAWrapper(model, tta.aliases.five_crop_transform(),  merge_mode='mean')
+
+* parameter: 
   model: input model
   tta.aliases.five_crop_transform(): transformation type
   (using it from aloases.py)
@@ -18,5 +18,5 @@ parameter:
           tta.Multiply(factors=[0.9, 1, 1.1]),
         ]
      )
-  merge_mode: the way to merge data, for image classification: using 'mean, geo-mean'
-"""
+   merge_mode: the way to merge data, for image classification: using 'mean, geo-mean'
+
