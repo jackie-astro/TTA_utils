@@ -1,7 +1,8 @@
 # TTA_utils
 ## TTA implementation 
 * fork lib from git : https://github.com/qubvel/ttach
-  tta_model = tta.ClassificationTTAWrapper(model, tta.aliases.five_crop_transform(),  merge_mode='mean')
+  
+    tta_model = tta.ClassificationTTAWrapper(model, tta.aliases.five_crop_transform(),  merge_mode='mean')
 
 * parameter: 
     model: input model
